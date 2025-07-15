@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, Image } from 'react-native';
+import { SafeAreaView, Text, Image, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const SplashScreen = () => {
@@ -7,16 +7,16 @@ const SplashScreen = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('DestinationList');
-    }, 5000);
+      navigation.replace('ExploreDestination');
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [navigation]);
 
   return (
-    <View className="flex-1 justify-center items-center bg-white">
+    <SafeAreaView className="flex-1 justify-center items-center bg-white p-4">
       <Image
-        source={{ uri: 'https://via.placeholder.com/150x150/4CAF50/FFFFFF?text=HT' }}
+        source={require('../assets/logo.png')}
         className="w-32 h-32 mb-8"
         resizeMode="contain"
       />
@@ -26,7 +26,7 @@ const SplashScreen = () => {
       <Text className="text-lg text-gray-600 mt-4 text-center">
         Explore Your Journey
       </Text>
-    </View>
+    </SafeAreaView>
   );
 };
 

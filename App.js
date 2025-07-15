@@ -6,9 +6,11 @@ import { StatusBar } from 'expo-status-bar';
 
 // Import screens
 import SplashScreen from './screens/SplashScreen';
-import DestinationListPage from './screens/DestinationListPage';
-import ResortListPage from './screens/ResortListPage';
-import ResortDetailPage from './screens/ResortDetailPage';
+import ExploreDestinationScreen from './screens/ExploreDestinationScreen';
+import StaysScreen from './screens/StaysScreen';
+
+import StayInKodaikanalScreen from './screens/StayInKodaikanal';
+import EdwinGuesthouseDetailScreen from './screens/EdwinGuesthouseDetail';
 
 const Stack = createStackNavigator();
 
@@ -22,9 +24,10 @@ export default function App() {
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="Splash" component={SplashScreen} />
-          <Stack.Screen name="DestinationList" component={DestinationListPage} />
-          <Stack.Screen name="ResortList" component={ResortListPage} />
-          <Stack.Screen name="ResortDetail" component={ResortDetailPage} />
+          <Stack.Screen name="ExploreDestination" component={ExploreDestinationScreen} />
+          <Stack.Screen name="Stays" component={StaysScreen} />
+          <Stack.Screen name="StayInKodaikanal" component={StayInKodaikanalScreen} />
+          <Stack.Screen name="EdwinGuesthouseDetail" component={EdwinGuesthouseDetailScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
