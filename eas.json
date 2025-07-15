@@ -11,6 +11,12 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "GOOGLE_SERVICES_JSON": "@GOOGLE_SERVICES_JSON"
+      },
+      "prebuild": {
+        "command": "node scripts/create-google-services.js"
       }
     },
     "production": {}

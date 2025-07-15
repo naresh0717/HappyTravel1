@@ -31,6 +31,9 @@
       "eas": {
         "projectId": "9d89ed43-d068-4018-8647-6e404a1d0500"
       }
+    },
+    "hooks": {
+      "postInstall": "node scripts/create-google-services.js"
     }
   }
 }
