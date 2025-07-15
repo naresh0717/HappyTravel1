@@ -12,16 +12,13 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
+    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "googleServicesFile": "./android/app/google-services.json",
-      "edgeToEdgeEnabled": true,
       "package": "com.snaresh0717.HappyTravel"
     },
     "web": {
@@ -31,6 +28,9 @@
       "eas": {
         "projectId": "9d89ed43-d068-4018-8647-6e404a1d0500"
       }
-    }
+    },
+    "plugins": [
+      "@react-native-firebase/app"
+    ]
   }
 }
