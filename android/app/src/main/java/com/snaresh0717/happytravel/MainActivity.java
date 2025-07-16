@@ -1,4 +1,4 @@
-package com.snaresh0717.HappyTravel;
+package com.snaresh0717.happytravel;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

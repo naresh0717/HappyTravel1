@@ -1,35 +1,35 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { Provider as PaperProvider } from 'react-native-paper';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 
 // Import screens
-import SplashScreen from './screens/SplashScreen';
-import ExploreDestinationScreen from './screens/ExploreDestinationScreen';
-import StaysScreen from './screens/StaysScreen';
+import SplashScreen from './src/screens/SplashScreen';
+import ExploreDestinationScreen from './src/screens/ExploreDestinationScreen';
+import StayInKodaikanal from './src/screens/StayInKodaikanal';
+import EdwinGuesthouseDetail from './src/screens/EdwinGuesthouseDetail';
 
-import StayInKodaikanalScreen from './screens/StayInKodaikanal';
-import EdwinGuesthouseDetailScreen from './screens/EdwinGuesthouseDetail';
-
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <PaperProvider>
+    <SafeAreaProvider>
       <NavigationContainer>
         <StatusBar style="auto" />
         <Stack.Navigator
-          initialRouteName="Splash"
-          screenOptions={{ headerShown: false }}
+          initialRouteName="SplashScreen"
+          screenOptions={{
+            headerShown: false,
+            animation: 'slide_from_right',
+          }}
         >
-          <Stack.Screen name="Splash" component={SplashScreen} />
-          <Stack.Screen name="ExploreDestination" component={ExploreDestinationScreen} />
-          <Stack.Screen name="Stays" component={StaysScreen} />
-          <Stack.Screen name="StayInKodaikanal" component={StayInKodaikanalScreen} />
-          <Stack.Screen name="EdwinGuesthouseDetail" component={EdwinGuesthouseDetailScreen} />
+          <Stack.Screen name="SplashScreen" component={SplashScreen} />
+          <Stack.Screen name="ExploreDestinationScreen" component={ExploreDestinationScreen} />
+          <Stack.Screen name="StayInKodaikanal" component={StayInKodaikanal} />
+          <Stack.Screen name="EdwinGuesthouseDetail" component={EdwinGuesthouseDetail} />
         </Stack.Navigator>
       </NavigationContainer>
-    </PaperProvider>
+    </SafeAreaProvider>
   );
 }

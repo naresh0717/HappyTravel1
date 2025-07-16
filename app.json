@@ -1,36 +1,43 @@
 {
   "expo": {
-    "name": "HappyTravel",
-    "slug": "HappyTravel",
+    "name": "Happy Travel",
+    "slug": "happy-travel",
+    "owner": "snaresh0717",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFFFFF"
       },
-      "googleServicesFile": "./android/app/google-services.json",
-      "package": "com.snaresh0717.HappyTravel"
+      "package": "com.snaresh0717.happytravel"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "9d89ed43-d068-4018-8647-6e404a1d0500"
-      }
-    },
     "plugins": [
-      "@react-native-firebase/app"
-    ]
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c94ff6a4-0b68-49fb-a9c4-5b8f5a61d11b"
+      }
+    }
   }
 }

@@ -1,4 +1,4 @@
-package com.snaresh0717.HappyTravel;
+package com.snaresh0717.happytravel;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

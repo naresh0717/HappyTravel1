@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.snaresh0717.HappyTravel">
+    package="com.snaresh0717.happytravel">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

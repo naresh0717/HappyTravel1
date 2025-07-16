@@ -1,0 +1,25 @@
+  --non-interactive is not supported, use $CI=1 instead
+Starting project at /Users/nareshanu/Desktop/application dev/HappyTravel
+env: load .env
+env: export GEMINI_API_KEY
+Starting Metro Bundler
+warning: Watchman `watch-project` returned a warning: Recrawled this watch 9 times, most recently because:
+MustScanSubDirs UserDroppedTo resolve, please review the information on
+https://facebook.github.io/watchman/docs/troubleshooting.html#recrawl
+To clear this warning, run:
+`watchman watch-del '/Users/nareshanu/Desktop/application dev/HappyTravel' ; watchman watch-project '/Users/nareshanu/Desktop/application dev/HappyTravel'`
+
+warning: Watchman `query` returned a warning: Recrawled this watch 9 times, most recently because:
+MustScanSubDirs UserDroppedTo resolve, please review the information on
+https://facebook.github.io/watchman/docs/troubleshooting.html#recrawl
+To clear this warning, run:
+`watchman watch-del '/Users/nareshanu/Desktop/application dev/HappyTravel' ; watchman watch-project '/Users/nareshanu/Desktop/application dev/HappyTravel'`
+
+Recrawled this watch 9 times, most recently because:
+MustScanSubDirs UserDroppedTo resolve, please review the information on
+https://facebook.github.io/watchman/docs/troubleshooting.html#recrawl
+To clear this warning, run:
+`watchman watch-del '/Users/nareshanu/Desktop/application dev/HappyTravel' ; watchman watch-project '/Users/nareshanu/Desktop/application dev/HappyTravel'`
+
+Waiting on http://localhost:8081
+Logs for your project will appear below.
